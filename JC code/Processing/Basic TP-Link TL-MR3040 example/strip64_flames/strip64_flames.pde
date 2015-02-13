@@ -1,4 +1,4 @@
-//OPC opc;
+OPC opc;
 //PImage im;
 
 // NEW - - - - - - - - - - - - - - - - - -
@@ -13,11 +13,11 @@ void setup()
 //  im = loadImage("flames.jpeg");
 
   // Connect to the local instance of fcserver
-//  opc = new OPC(this, "127.0.0.1", 7890);              // For running locally.
-//  opc = new OPC(this, "192.168.2.1", 7890);            // For running remotely on TP-Link.
+//opc = new OPC(this, "127.0.0.1", 7890);              // For running locally.
+opc = new OPC(this, "192.168.2.1", 7890);            // For running remotely on TP-Link.
 
   // Map one 64-LED strip to the center of the window
-//  opc.ledStrip(0, 64, width/2, height/2, width / 70.0, 0, false);
+opc.ledStrip(0, 64, width/2, height/2, width / 70.0, 0, false);
 
 // NEW - - - - - - - - - - - - - - - - - -
 
